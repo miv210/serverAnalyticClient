@@ -1,0 +1,14 @@
+@import '@taiga-ui/core/styles/taiga-ui-local.scss';
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 25%;
+    
+}
+
+.input_login{
+    align-self: center;
+}
