@@ -9,12 +9,14 @@ import {TuiCardModule} from '@taiga-ui/addon-commerce';
 import { AuthComponent } from 'src/views/auth/auth.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from "@angular/common/http"
- 
+import { MemoryComponent } from 'src/views/memory/memory.component';
+import {TuiTableModule} from '@taiga-ui/addon-table';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AuthComponent
+    AuthComponent,
+    MemoryComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,7 @@ import {HttpClientModule} from "@angular/common/http"
     TuiInputModule,
     ReactiveFormsModule,
     HttpClientModule,
+    TuiTableModule,
   ],
   providers: [tuiAvatarOptionsProvider({
     size: 'l',

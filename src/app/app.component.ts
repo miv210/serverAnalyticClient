@@ -6,7 +6,7 @@ import {TuiAlertService} from '@taiga-ui/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  
 })
 export class AppComponent {
   open = false;
