@@ -4,5 +4,6 @@ export class User{
         public password: string,
         public role?:string,
         public id?: number,
+        public selected : boolean= false,
         ){}
 }

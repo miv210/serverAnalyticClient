@@ -1,13 +1,18 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthComponent } from 'src/views/auth/auth.component';
-import { MemoryComponent } from 'src/views/memory/memory.component';
+import { MemoryComponent } from 'src/app/views/runningProcesses/runningProcesses.component';
 import { AppComponent } from './app.component';
+import { AnalyticsComponent } from './views/analytics/analytics.component';
+import { AuthComponent } from './views/auth/auth.component';
+import { ServersComponent } from './views/servers/servers.component';
 
 const routes: Routes = 
 [
-  {path: '', component: MemoryComponent},
-  {path: 'main', component: AppComponent}
+  {path: '', component: AuthComponent},
+  {path: 'main', component: AppComponent },
+  {path: 'main/analytics', component: AnalyticsComponent },
+  {path: 'main/history', component: MemoryComponent},
+  {path: 'main/servers', component: ServersComponent}
 ];
 
 @NgModule({

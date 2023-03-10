@@ -1,0 +1,23 @@
+<div class="content"
+    >
+    <form class="b-form" [formGroup]="serverForm">
+        <tui-input formControlName="nameServer">
+            Введите имя
+            <input
+                tuiTextfield
+                
+            />
+        </tui-input>
+        <tui-input formControlName="ipServer">
+            Введите ip сервера
+            <input
+                tuiTextfield
+                
+            />
+        </tui-input>
+    </form>
+
+    <button (click)="addServer()">
+        Добавить
+    </button>
+</div>

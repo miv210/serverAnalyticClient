@@ -1,8 +1,14 @@
 @import '@taiga-ui/core/styles/taiga-ui-local.scss';
 
-.table{
+.tui-table{
     width: 100%;    
+    align-items: center;
+    
 }
 .conten{
     padding: 1%;
+}
+
+.men{
+    margin: 0.5%;
 }

@@ -1,0 +1,38 @@
+<div class="header">
+    <tui-tabs-with-more
+        [itemsLimit]="3"
+        [(activeItemIndex)]="activeItemIndex"
+        class="nav"
+        >
+        <button
+            *tuiItem
+            tuiTab
+            (click)="goAnalytics()"
+        >
+            Аналитика
+        </button>
+        <button
+            *tuiItem
+            (click)="goHistory()"
+            tuiTab
+        >
+            История
+        </button>
+        <button
+            *tuiItem
+            (click)="goServers()"
+            tuiTab
+        >
+            Сервера
+        </button>
+        <button
+            *tuiItem
+            tuiTab
+        >
+            Настройки
+        </button>
+        
+    </tui-tabs-with-more>
+    
+</div>
+
